@@ -4,7 +4,7 @@
 body{
         background: url(../images/backgrounds/abc.png) no-repeat center center fixed; 
         background-color: rgba(255,255,255,0.8);
-    background-blend-mode: lighten;
+        background-blend-mode: lighten;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
