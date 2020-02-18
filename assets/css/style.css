@@ -1,6 +1,21 @@
 .bg-nav {
-	background-color: #291E60 !important
+    background-color: #291E60 !important;
+    box-shadow: 0px 0px  10px #000000;
 }
+.text-light-primary{
+    color: #29AAE1;
+}
+.bg-light-primary{
+    color: #fff;
+    background-color: #29AAE1;
+}
+.question{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* common styles and colors shortcuts end here */
+
 body{
         background: url(../images/backgrounds/abc.png) no-repeat center center fixed; 
         background-color: rgba(255,255,255,0.8);
@@ -42,6 +57,7 @@ body{
     box-shadow: 0px 0px 10px #949494;
 }
 .page-content .page-title{
+    padding: 5px;
     background-color: #29AAE1;
     position: relative;
 }
@@ -52,7 +68,7 @@ body{
     left: 12px;
 }
 .page-content .page-title .page-back-arrow:hover{
-    color: rgb(109, 103, 103);
+    color: #8ab8ff;
 }
 .page-content .page-title h1{
     color: #fff;
@@ -65,28 +81,167 @@ body{
     padding: 15px 15px;
     
 }
-.page-body .row{
+/* common page css ends here */
+
+/* dashboard page css start here */
+
+.page-body .dashboard-contents{
     background-color: #f5f5f5;
     border: 1px solid #eaeaea;
     border-radius: 10px;
     padding: 7px 7px;
     margin: 0px;
 }
-.page-body .row .col-md-3 {
+.page-body .dashboard-contents .col-md-3 {
     padding: 10px 10px;
     margin: 0px 0px;
 }
-.page-body .row .col-md-3 .button{
+.page-body .dashboard-contents .col-md-3 .button{
     border: 1px solid #d6d6d6;
     border-radius: 15px;
     background-color: #fff;
     box-shadow: 0px 0px 10px #969696;
     padding: 20px;
 }
-.page-body .row .col-md-3 img{
+.page-body .dashboard-contents .col-md-3 img{
     width: 120px;
     height:120px; 
 }
-.page-body .row .col-md-3 h3{
+.page-body .dashboard-contents .col-md-3 h3{
     font-size: 15px;
 }
+
+/* dashboard page css end here */
+
+/* Study page css start here */
+
+.chapter-button{
+    border: 1px solid #e2e2e2;
+    color: #29AAE1;
+    background-color: #F2F2F2;
+    border-radius: 10rem;
+    padding: 5px 20px;
+    font-weight: 700;
+    box-shadow: 1px 1px 5px #e2e2e2;
+    margin: 0px 10px 10px 0px;
+    outline: none!important;
+}
+
+.chapter-button.active{
+    color: #F2F2F2;
+    background-color: #29AAE1;
+}
+
+.topics-ul{
+    list-style: none;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    margin: 20px 0px 0px 0px;
+    padding: 10px 15px 25px 15px;
+    text-align: initial;
+}
+
+.topics-li{
+    color: #2091c1;
+    font-weight: 600;
+    font-size: 17px;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 5px 0px 5px 10px;
+}
+
+.topics-no{
+    padding: 0px 15px 0px 0px;
+}
+
+.topics-li:hover{
+    border-bottom: 1px solid #5aaacc;
+    color: #5aaacc;
+}
+
+/* Study page css ends here */
+
+/* topic page css start here */
+
+.topic-parts{
+    border: 1px solid #e2e2e2;
+    padding: 15px;
+    text-align: justify;
+    margin: 0px 0px 10px 0px;
+    border-radius: 5px;
+}
+
+.topic-arrow-buttons{
+    margin: 0px 0px 35px 0px;
+    display: block;
+}
+
+.topic-back{
+    float: left;
+}
+
+.topic-next{
+    float: right;
+}
+
+.topic-arrow-buttons button{
+    background-color: green;
+    color: honeydew;
+    border: none;
+    outline: none!important;
+}
+
+.topic-arrow-buttons button:hover{
+    background-color: honeydew;
+    color: green;
+}
+
+/* topic page css ends here */
+
+/* question/test/prev-que page css start here */
+
+.single-mcq{
+    margin: 10px;
+    padding: 5px;
+}
+
+.question-no{
+    background: #EE8C34;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 2px;
+}
+
+.question-mcq{
+    padding-left: 5px;
+}
+
+.single-mcq ul{
+    list-style: none;
+    padding-left: 20px;
+}
+
+.single-mcq li{
+    padding-left: 2px;
+}
+
+.test-submit-button{
+    outline: none!important;
+    background: #0073C1;
+    color: #fff;
+    padding: 2px 25px;
+    border: 1px solid #025288;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.test-submit-button:hover{
+    background:#025288;
+}
+
+/* question/test/prev-que page css ends here */
+
+/* newsfeed page css start here */
+
+
+
+/* newsfeed page css ends here */
