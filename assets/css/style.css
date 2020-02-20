@@ -313,8 +313,10 @@ ul.writepost-icons li.writepost-icon i{
 }
 
 .post-owner{
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 15px 10px 10px 15px;
+    /* হাইট এড করসি অভার ফ্লও না হওার জন্য জেইটা ফ্লট রাইট এর জন্য হইসে! now overflow visible for dropdown*/
+    height: 70px;
     /* border-bottom: 1px solid #ececec; */
 }
 
@@ -355,8 +357,12 @@ ul.writepost-icons li.writepost-icon i{
 }
 
 .post-option-triple-dot{
-    padding: 15px 20px 0px 0px;
+    margin: 15px 20px 0px 0px;
     float: right;
+}
+
+.post-option-triple-dot .dropdown-menu {
+    transform: translate3d(-150px, 20px, 0px)!important;
 }
 
 .post-content p{
