@@ -77,8 +77,11 @@ body{
     /* font-family: janda manate solid; */
 }
 .page-body{
-    background-color: #fafafa;
+    background-color: #f3f3f3;
     padding: 15px 15px;
+    /* overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 387px; */
     
 }
 /* common page css ends here */
@@ -86,7 +89,7 @@ body{
 /* dashboard page css start here */
 
 .page-body .dashboard-contents{
-    background-color: #f5f5f5;
+    background-color: #e6e6e6;
     border: 1px solid #eaeaea;
     border-radius: 10px;
     padding: 7px 7px;
@@ -303,9 +306,209 @@ ul.writepost-icons li.writepost-icon i{
 .post-section{
     border: 1px solid #e3e3e3;
     border-radius: 2px;
-    padding: 5px 5px 5px 5px;
+    /* padding: 5px 5px 5px 5px; */
     margin: 10px 0px 10px 0px;
-    background-color: #ececec;
+    background-color: #fafafa;
+    /* width: 70%; */
+}
+
+.post-owner{
+    overflow: hidden;
+    padding: 15px 10px 10px 15px;
+    /* border-bottom: 1px solid #ececec; */
+}
+
+.post-owner-pp{
+    background-image: url(../images/backgrounds/Deafult-Profile-Picture.png);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #e4e4e4;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    /* display: inline-block; */
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+
+.post-owner-pp img{
+    height: 50px;
+    width: 50px;
+    border: 1px solid #e4e4e4;
+    border-radius: 50%;
+}
+
+.post-owner-name-time{
+    line-height: 0.6;
+    padding: 0px 0px;
+    float: left;
+}
+
+.post-owner-name{
+    margin: 0px 0px 0px 0px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.post-date-time{
+    margin: 0px 0px 0px -15px;
+}
+
+.post-option-triple-dot{
+    padding: 15px 20px 0px 0px;
+    float: right;
+}
+
+.post-content p{
+    padding: 0rem 1rem;
+    text-align: justify;
+}
+
+.post-write-comment{
+    padding: 10px 10px 10px 10px;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.postcomment-textarea{
+    position: relative;
+}
+
+.postcomment-textarea input{
+    padding: 5px 90px 5px 10px;
+    outline: none;
+    height: auto;
+    color: #53535f;
+    border: 1px solid #edf2f9;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+ul.postcomment-icons{
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    list-style: none;
+    display: flex;
+}
+
+ul.postcomment-icons li.postcomment-icon{
+    padding: 0px 10px 0px 0px;
+}
+
+ul.postcomment-icons li.postcomment-icon input{
+    display: none;
+}
+
+ul.postcomment-icons li.postcomment-icon i{
+    color: #29AAE1;
+}
+
+.post-comments{
+    padding: 30px 30px 20px 30px;
+    text-align: initial;
+}
+
+
+.comment-owner{
+    overflow: hidden;
+    margin: 0px 0px 15px 0px;
+}
+
+.comment-owner-pp{
+    background-image: url(../images/backgrounds/Deafult-Profile-Picture.png);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #e4e4e4;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    /* display: inline-block; */
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+
+.comment-owner-pp img{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #e4e4e4;
+    border-radius: 50%;
+}
+
+.comment-owner-name-time{
+    padding: 8px 0px 0px 0px;
+    float: left;
+    line-height: 1.1;
+}
+
+p.comment-owner-name{
+    margin: 0px 0px 0px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+
+.comment-date-time{
+    margin: 0px 0px 0px 0px;
+}
+
+.comment-option-triple-dot{
+    float: right;
+    margin: 8px 0px 0px 0px;
+}
+
+.commet-content{
+    padding: 15px 5px 0px 5px;
+    margin: 0px 0px 10px 0px;
+}
+
+.comment-content img{
+    border: 1px solid #eee;
+    margin: 0px 0px 15px 0px;
+    width: 120px;
+    height: 120px;
+}
+
+.comment-content p{
+    text-align: justify;
+    line-height: 1.2;
+}
+
+.comment-action{
+    text-align: initial;
+    overflow: hidden;
+    padding: 10px 0px 0px 0px;
+    border-top: 1px solid #eee;
+}
+
+.comment-ratings-stars{
+    float: left;
+}
+
+.comment-ratings-stars p{
+ display: inline;
+}
+
+button.comment-report-button{
+    float: right;
+    outline: none;
+    background: #eee;
+    border: 1px solid #dadada;
+    border-radius: 0.25rem;
+    box-shadow: 0px 0px 1px;
+    font-size: 14px;
+}
+
+button.comment-report-button:hover{
+    background: #b5b5b5;
 }
 
 /* newsfeed page css ends here */
