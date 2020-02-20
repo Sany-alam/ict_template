@@ -517,4 +517,53 @@ button.comment-report-button:hover{
     background: #b5b5b5;
 }
 
+.comment-action .one-star i:nth-child(2){
+    color: goldenrod;
+ } /* one star rate */
+.comment-action .two-star i:nth-child(3){
+    color: goldenrod;
+}
+.comment-action .two-star i:nth-child(2){
+    color: goldenrod;
+} /* two star rate */
+
+.comment-action .three-star i:nth-child(2){
+    color: goldenrod;
+ } 
+.comment-action .three-star i:nth-child(3){
+    color: goldenrod;
+}
+.comment-action .three-star i:nth-child(4){
+    color: goldenrod;
+} /* three star rate */
+
+.comment-action .four-star i:nth-child(2){
+    color: goldenrod;
+ } 
+.comment-action .four-star i:nth-child(3){
+    color: goldenrod;
+}
+.comment-action .four-star i:nth-child(4){
+    color: goldenrod;
+}
+.comment-action .four-star i:nth-child(5){
+    color: goldenrod;
+ }  /* four star rate */
+
+.comment-action .five-star i:nth-child(2){
+    color: goldenrod;
+ } 
+.comment-action .five-star i:nth-child(3){
+    color: goldenrod;
+}
+.comment-action .five-star i:nth-child(4){
+    color: goldenrod;
+}
+.comment-action .five-star i:nth-child(5){
+    color: goldenrod;
+ }
+.comment-action .five-star i:nth-child(6){
+    color: goldenrod;
+ }  /* five star rate */
+
 /* newsfeed page css ends here */
