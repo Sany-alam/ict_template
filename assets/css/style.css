@@ -51,7 +51,7 @@ body{
     overflow: hidden;
     margin: auto;
     border-radius: 10px;
-    margin-top: 100px;
+    /* margin-top: 150px; */
     margin-bottom: 50px;
     /* border: 1px solid #dbdbdb; */
     box-shadow: 0px 0px 10px #949494;
@@ -118,21 +118,34 @@ body{
 
 /* Study page css start here */
 
+.chapter-buttons{
+    width: 100%;
+}
+
+.chapter-buttons ul{
+    width: 76%;
+    margin: auto;
+}
+
+.chapter-buttons li{
+    padding: 2px 3px 3px 3px;
+}
+
 .chapter-button{
-    border: 1px solid #e2e2e2;
-    color: #29AAE1;
-    background-color: #F2F2F2;
-    border-radius: 10rem;
-    padding: 5px 20px;
-    font-weight: 700;
-    box-shadow: 1px 1px 5px #e2e2e2;
-    margin: 0px 10px 10px 0px;
+    border: 1px solid #e2e2e2 !important;
+    color: #29AAE1 !important;
+    background-color: #F2F2F2 !important;
+    border-radius: 10rem !important;
+    /* padding: 5px 20px !important; */
+    font-weight: 700 !important;
+    box-shadow: 1px 1px 5px #e2e2e2 !important;
+    /* margin: 0px 10px 10px 0px !important; */
     outline: none!important;
 }
 
-.chapter-button.active{
-    color: #F2F2F2;
-    background-color: #29AAE1;
+a.chapter-button.active{
+    color: #F2F2F2!important;
+    background-color: #29AAE1!important;
 }
 
 .topics-ul{
@@ -567,3 +580,27 @@ button.comment-report-button:hover{
  }  /* five star rate */
 
 /* newsfeed page css ends here */
+
+
+/* media query start here */
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    .page-content{
+        margin-top: 20vw;
+    }
+}
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    .page-content{
+        margin-top: 15vw;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+    .page-content{
+        margin-top: 12vw;
+    }
+  }

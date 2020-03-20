@@ -12,6 +12,10 @@
     <!-- Custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- required javascripts -->
+    <script src="assets/js/vendors.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+
     <title>Document</title>
 </head>
 <body>
@@ -62,16 +66,17 @@
           <!-- box body -->
           <div class="page-body">
               <!-- chapter buttons -->
-            <div class="chapter-buttons">
-                <button class="chapter-button active">Chapter 1</button>
-                <button class="chapter-button">Chapter 2</button>
-                <button class="chapter-button">Chapter 3</button>
-                <button class="chapter-button">Chapter 4</button>
-                <button class="chapter-button">Chapter 5</button>
-            </div>
+            <!-- <div class="chapter-buttons">
+                <button type="button" data-toggle="tab" data-target="#chapter-1" class="chapter-button active">Chapter 1</button>
+                <button type="button" data-toggle="tab" data-target="#chapter-2" class="chapter-button">Chapter 2</button>
+                <button type="button" data-toggle="tab" data-target="#chapter-3" class="chapter-button">Chapter 3</button>
+                <button type="button" data-toggle="tab" data-target="#chapter-4" class="chapter-button">Chapter 4</button>
+                <button type="button" data-toggle="tab" data-target="#chapter-5" class="chapter-button">Chapter 5</button>
+                <button type="button" data-toggle="tab" data-target="#chapter-6" class="chapter-button">Chapter 6</button>
+            </div> -->
                 <!-- chapter topics div -->
-            <div class="chapter-topics">
-                <ul class="topics-ul">
+            <!-- <div class="chapter-topics tab-content">
+                <ul id="chapter-1" class="topics-ul tab-pane fade in active">
                     <a href="Topic.html">
                         <li class="topics-li">
                             <span class="topics-no">1.1</span>
@@ -103,6 +108,394 @@
                         </li>
                     </a>
                 </ul>
+                <ul id="chapter-2" class="topics-ul tab-pane fade">
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">2.1</span>
+                            <span class="topic-name">Topic 1</span>
+                        </li>
+                    </a>
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">2.2</span>
+                            <span class="topic-name">Topic 2</span>
+                        </li>
+                    </a>
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">2.3</span>
+                            <span class="topic-name">Topic 3</span>
+                        </li>
+                    </a>
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">2.4</span>
+                            <span class="topic-name">Topic 4</span>
+                        </li>
+                    </a>
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">2.5</span>
+                            <span class="topic-name">Topic 5</span>
+                        </li>
+                    </a>
+                </ul>
+                <ul id="chapter-3" class="topics-ul tab-pane fade">
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">3.1</span>
+                            <span class="topic-name">Topic 1</span>
+                        </li>
+                    </a>
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">3.2</span>
+                            <span class="topic-name">Topic 2</span>
+                        </li>
+                    </a>
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">3.3</span>
+                            <span class="topic-name">Topic 3</span>
+                        </li>
+                    </a>
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">3.4</span>
+                            <span class="topic-name">Topic 4</span>
+                        </li>
+                    </a>
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">3.5</span>
+                            <span class="topic-name">Topic 5</span>
+                        </li>
+                    </a>
+                </ul>
+                <ul id="chapter-4" class="topics-ul tab-pane fade">
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">4.1</span>
+                            <span class="topic-name">Topic 1</span>
+                        </li>
+                    </a>
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">4.2</span>
+                            <span class="topic-name">Topic 2</span>
+                        </li>
+                    </a>
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">4.3</span>
+                            <span class="topic-name">Topic 3</span>
+                        </li>
+                    </a>
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">4.4</span>
+                            <span class="topic-name">Topic 4</span>
+                        </li>
+                    </a>
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">4.5</span>
+                            <span class="topic-name">Topic 5</span>
+                        </li>
+                    </a>
+                </ul>
+                <ul id="chapter-5" class="topics-ul tab-pane fade">
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">5.1</span>
+                            <span class="topic-name">Topic 1</span>
+                        </li>
+                    </a>
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">5.2</span>
+                            <span class="topic-name">Topic 2</span>
+                        </li>
+                    </a>
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">5.3</span>
+                            <span class="topic-name">Topic 3</span>
+                        </li>
+                    </a>
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">5.4</span>
+                            <span class="topic-name">Topic 4</span>
+                        </li>
+                    </a>
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">5.5</span>
+                            <span class="topic-name">Topic 5</span>
+                        </li>
+                    </a>
+                </ul>
+                <ul id="chapter-6" class="topics-ul tab-pane fade">
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">6.1</span>
+                            <span class="topic-name">Topic 1</span>
+                        </li>
+                    </a>
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">6.2</span>
+                            <span class="topic-name">Topic 2</span>
+                        </li>
+                    </a>
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">6.3</span>
+                            <span class="topic-name">Topic 3</span>
+                        </li>
+                    </a>
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">6.4</span>
+                            <span class="topic-name">Topic 4</span>
+                        </li>
+                    </a>
+                    <a href="Topic.html">
+                        <li class="topics-li">
+                            <span class="topics-no">6.5</span>
+                            <span class="topic-name">Topic 5</span>
+                        </li>
+                    </a>
+                </ul>
+            </div> -->
+            <div class="chapter-buttons">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link chapter-button active" id="chapter-1-tab" data-toggle="tab" href="#chapter-1" role="tab" aria-controls="chapter-1" aria-selected="true">Chapter-1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link chapter-button" id="chapter-2-tab" data-toggle="tab" href="#chapter-2" role="tab" aria-controls="chapter-2" aria-selected="false">Chapter-2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link chapter-button" id="chapter-3-tab" data-toggle="tab" href="#chapter-3" role="tab" aria-controls="chapter-3" aria-selected="false">Chapter-3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link chapter-button" id="chapter-4-tab" data-toggle="tab" href="#chapter-4" role="tab" aria-controls="chapter-4" aria-selected="false">Chapter-4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link chapter-button" id="chapter-5-tab" data-toggle="tab" href="#chapter-5" role="tab" aria-controls="chapter-5" aria-selected="false">Chapter-5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link chapter-button" id="chapter-6-tab" data-toggle="tab" href="#chapter-6" role="tab" aria-controls="chapter-6" aria-selected="false">Chapter-6</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content m-t-15" id="myTabContent">
+                <div class="tab-pane fade show active" id="chapter-1" role="tabpanel" aria-labelledby="chapter-1-tab">
+                    <ul class="topics-ul">
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">1.1</span>
+                                <span class="topic-name">Topic 1</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">1.2</span>
+                                <span class="topic-name">Topic 2</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">1.3</span>
+                                <span class="topic-name">Topic 3</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">1.4</span>
+                                <span class="topic-name">Topic 4</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">1.5</span>
+                                <span class="topic-name">Topic 5</span>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="chapter-2" role="tabpanel" aria-labelledby="chapter-2-tab">
+                    <ul class="topics-ul">
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">2.1</span>
+                                <span class="topic-name">Topic 1</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">2.2</span>
+                                <span class="topic-name">Topic 2</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">2.3</span>
+                                <span class="topic-name">Topic 3</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">2.4</span>
+                                <span class="topic-name">Topic 4</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">2.5</span>
+                                <span class="topic-name">Topic 5</span>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="chapter-3" role="tabpanel" aria-labelledby="chapter-3-tab">
+                    <ul class="topics-ul">
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">3.1</span>
+                                <span class="topic-name">Topic 1</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">3.2</span>
+                                <span class="topic-name">Topic 2</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">3.3</span>
+                                <span class="topic-name">Topic 3</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">3.4</span>
+                                <span class="topic-name">Topic 4</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">3.5</span>
+                                <span class="topic-name">Topic 5</span>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="chapter-4" role="tabpanel" aria-labelledby="chapter-4-tab">
+                    <ul class="topics-ul">
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">4.1</span>
+                                <span class="topic-name">Topic 1</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">4.2</span>
+                                <span class="topic-name">Topic 2</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">4.3</span>
+                                <span class="topic-name">Topic 3</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">4.4</span>
+                                <span class="topic-name">Topic 4</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">4.5</span>
+                                <span class="topic-name">Topic 5</span>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="chapter-5" role="tabpanel" aria-labelledby="chapter-5-tab">
+                    <ul class="topics-ul">
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">5.1</span>
+                                <span class="topic-name">Topic 1</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">5.2</span>
+                                <span class="topic-name">Topic 2</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">5.3</span>
+                                <span class="topic-name">Topic 3</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">5.4</span>
+                                <span class="topic-name">Topic 4</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">5.5</span>
+                                <span class="topic-name">Topic 5</span>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="chapter-6" role="tabpanel" aria-labelledby="chapter-6-tab">
+                    <ul class="topics-ul">
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">6.1</span>
+                                <span class="topic-name">Topic 1</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">6.2</span>
+                                <span class="topic-name">Topic 2</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">6.3</span>
+                                <span class="topic-name">Topic 3</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">6.4</span>
+                                <span class="topic-name">Topic 4</span>
+                            </li>
+                        </a>
+                        <a href="Topic.html">
+                            <li class="topics-li">
+                                <span class="topics-no">6.5</span>
+                                <span class="topic-name">Topic 5</span>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
             </div>
           </div>
         </div>
@@ -114,7 +507,4 @@
   </div>
 
 </body>
-<!-- required javascripts -->
-<script src="assets/js/vendors.min.js"></script>
-<script src="assets/js/app.min.js"></script>
 </html>
