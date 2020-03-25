@@ -3,11 +3,11 @@
     box-shadow: 0px 0px  10px #000000;
 }
 .text-light-primary{
-    color: #29AAE1;
+    color: #29AAE1!important;
 }
 .bg-light-primary{
-    color: #fff;
-    background-color: #29AAE1;
+    color: #fff!important;
+    background-color: #29AAE1!important;
 }
 .question{
     font-weight: 700;
@@ -60,12 +60,18 @@ body{
     padding: 5px;
     background-color: #29AAE1;
     position: relative;
+    width: 100%;
+    height: 45px;
 }
-.page-content .page-title .page-back-arrow{
+
+
+/* .page-content .page-title .page-back-arrow{
     color: #fff;
-    font-size: 33px;
+    font-size: 25px;
     position: absolute;
-    left: 12px;
+    width: 10%;
+    left: 0;
+    text-align: center;
 }
 .page-content .page-title .page-back-arrow:hover{
     color: #8ab8ff;
@@ -73,9 +79,25 @@ body{
 .page-content .page-title h1{
     color: #fff;
     display:inline-block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center; */
     /* font not available */
     /* font-family: janda manate solid; */
+/* } */
+
+.page-content .page-title a{
+    color: #fff;
+    font-size: 25px;
 }
+
+.page-content .page-title a:first-child{
+    position: absolute;
+    left: 0;
+    padding: 0px 15px 0px 15px;
+}
+
 .page-body{
     background-color: #f3f3f3;
     padding: 15px 15px;
@@ -83,6 +105,10 @@ body{
     overflow-y: scroll;
     max-height: 387px; */
     
+}
+
+p{
+    color:#000000!important;
 }
 /* common page css ends here */
 
@@ -588,6 +614,14 @@ button.comment-report-button:hover{
 @media only screen and (max-width: 400px) {
     .page-content{
         margin-top: 20vw;
+    }
+
+    .page-content .page-title {
+        height: 40px;
+    }
+
+    .page-content .page-title a{
+        font-size: 18px;
     }
 }
   
